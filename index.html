@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Veduuuuuuuuuuuu  Rohith — Our Little World</title>
+<meta name="description" content="A little digital memory book for Veduuuuuuuuuuuu — from Rohith.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:#fff8f8;color:#33252b;font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(#e9a8b8 1px,transparent 1px);background-size:22px 22px;z-index:-1}
+nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:20;padding:10px 16px;border:1px solid #ffffffaa;border-radius:999px;background:#ffffffbb;backdrop-filter:blur(14px);box-shadow:0 10px 30px #8f536018;display:flex;gap:8px}
+nav a{color:#5c3d46;text-decoration:none;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:600}
+nav a:hover{background:#ffe5eb}
+.hero{min-height:100vh;display:grid;place-items:center;padding:100px 22px 70px;position:relative}
+.hero-inner{text-align:center;max-width:900px}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:11px;color:#a75d70;font-weight:700}
+h1{font-family:Caveat,cursive;font-size:clamp(64px,12vw,140px);line-height:.8;margin:24px 0 20px;color:#8d3d58}
+.hero p{font-size:clamp(17px,2.2vw,23px);line-height:1.6;max-width:700px;margin:auto;color:#654b54}
+.cta{display:inline-flex;margin-top:32px;padding:14px 22px;border-radius:999px;background:#8d3d58;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 15px 35px #8d3d5830}
+.float{position:absolute;font-size:28px;animation:float 5s ease-in-out infinite}
+.f1{top:25%;left:10%}.f2{top:34%;right:10%;animation-delay:1s}.f3{bottom:15%;left:17%;animation-delay:2s}.f4{bottom:22%;right:17%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+section{padding:95px 22px;max-width:1150px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title .small{font-size:12px;text-transform:uppercase;letter-spacing:3px;color:#b06a7c;font-weight:700}
+h2{font-family:Caveat,cursive;font-size:58px;margin:8px 0;color:#743247}
+.letter{background:#fff;border:1px solid #f0d8df;border-radius:28px;padding:42px clamp(25px,6vw,70px);box-shadow:0 25px 70px #7d405015;position:relative}
+.letter:before{content:"";position:absolute;right:28px;top:15px;font-size:45px;color:#e3a0b1}
+.letter p{font-family:Caveat,cursive;font-size:28px;line-height:1.45;margin:10px 0}
+.signature{text-align:right;margin-top:25px;font-size:34px!important;color:#8d3d58}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.card{background:#fff;padding:10px 10px 18px;border-radius:8px;box-shadow:0 14px 35px #66344418;transition:.35s;cursor:pointer}
+.card:hover{transform:translateY(-7px) rotate(-1deg);box-shadow:0 22px 45px #66344425}
+.card img{width:100%;height:100%;object-fit:cover;border-radius:4px;display:block}
+.c1{grid-column:span 7;height:520px;transform:rotate(-1deg)} .c2{grid-column:span 5;height:520px;transform:rotate(1.2deg)}
+.c3{grid-column:span 5;height:430px;transform:rotate(1deg)} .c4{grid-column:span 7;height:430px;transform:rotate(-1deg)}
+.c5{grid-column:4/span 5;height:500px;transform:rotate(.8deg)}
+.caption{text-align:center;font-family:Caveat,cursive;font-size:25px;margin-top:8px;color:#6c4852}
+.timeline{position:relative;max-width:780px;margin:auto}
+.timeline:before{content:"";position:absolute;left:20px;top:0;bottom:0;width:2px;background:#e9b9c5}
+.event{position:relative;padding:0 0 34px 58px}.dot{position:absolute;left:11px;top:4px;width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid #b9687d}
+.event h3{margin:0;color:#84394f;font-size:18px}.event p{margin:7px 0;color:#6c565d;line-height:1.65}
+.future{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.future .box{min-height:150px;border:1px dashed #d99aaa;border-radius:20px;padding:25px;background:#fff9fa}
+.box strong{display:block;font-family:Caveat,cursive;font-size:28px;color:#84394f;margin-bottom:8px}
+.final{text-align:center;padding-bottom:120px}.final h2{font-size:70px}
+.final p{font-family:Caveat,cursive;font-size:30px;line-height:1.4;max-width:680px;margin:0 auto}
+footer{text-align:center;padding:30px;color:#98747e;font-size:12px}
+.modal{position:fixed;inset:0;background:#24151ccc;display:none;place-items:center;z-index:50;padding:20px}.modal.show{display:grid}
+.modal img{max-width:min(92vw,850px);max-height:88vh;border-radius:12px;box-shadow:0 30px 90px #0008}
+.close{position:fixed;right:25px;top:20px;border:0;background:#fff;color:#6f3045;width:42px;height:42px;border-radius:50%;font-size:24px;cursor:pointer}
+@media(max-width:700px){
+ nav{width:calc(100% - 24px);justify-content:center;overflow:auto} nav a{font-size:11px;padding:7px 8px;white-space:nowrap}
+ section{padding:75px 18px}.hero{padding-top:120px}
+ h2{font-size:48px}.letter p{font-size:24px}
+ .gallery{display:block}.card{height:440px!important;margin:18px 4px}.c5{height:500px!important}
+ .future{grid-template-columns:1fr}.float{display:none}
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="#letter">Letter</a><a href="#memories">Memories</a><a href="#story">Our Story</a><a href="#future">Next Chapters</a>
+</nav>
+
+<header class="hero">
+<span class="float f1"></span><span class="float f2">✦</span><span class="float f3"></span><span class="float f4">✧</span>
+<div class="hero-inner">
+<div class="eyebrow">A memory website for my best best best friend</div>
+<h1>Veduuuuuuuuuuuu</h1><div style="font-size:clamp(18px,3vw,28px);letter-spacing:6px;text-transform:uppercase;color:#9b5368;font-weight:700;margin-top:20px;">MY BEST BEST BEST FRIEND</div>
+<p>Three months. A hundred little moments. And somehow, you became my BEST BEST BEST FRIEND.</p>
+<a class="cta" href="#letter">Open our little world ↓</a>
+</div>
+</header>
+
+<section id="letter">
+<div class="section-title"><div class="small">From Rohith</div><h2>A letter for you </h2></div>
+<div class="letter">
+<p>Dear Veduuuuuuuuuuuu,</p>
+<p>I don't know how three months can hold this many memories, but somehow they do.</p>
+<p>Some days were simple — a conversation, a meal, a walk, a random photo. But those ordinary moments became the ones I wanted to keep.</p>
+<p>Thank you for becoming such an important part of my life and for being my best best best friend. Whatever the next chapters bring, I hope we keep collecting stupid laughs, unforgettable places, random food plans and memories that make us smile years later.</p>
+<p>And if you ever wonder whether these three months mattered… they absolutely did. More than I can fit into one webpage.</p>
+<p class="signature">— Rohith </p>
+</div>
+</section>
+
+<section id="memories">
+<div class="section-title"><div class="small">Our little archive</div><h2>Best Best Best Friend Memories</h2></div>
+<div class="gallery">
+<div class="card c1" data-img="images/memory-1.jpeg"><img src="images/memory-1.jpeg" alt="A memory together"><div class="caption">One of those pictures that says enough </div></div>
+<div class="card c2" data-img="images/memory-2.jpeg"><img src="images/memory-2.jpeg" alt="Lakeside memory"><div class="caption">Just us, the water & a moment</div></div>
+<div class="card c3" data-img="images/memory-3.jpeg"><img src="images/memory-3.jpeg" alt="Pizza memory"><div class="caption">Because memories need pizza 🍕</div></div>
+<div class="card c4" data-img="images/memory-4.jpeg"><img src="images/memory-4.jpeg" alt="Veduuuuuuuuuuuu"><div class="caption">Veduuuuuuuuuuuu being Veduuuuuuuuuuuu</div></div>
+<div class="card c5" data-img="images/memory-5.jpeg"><img src="images/memory-5.jpeg" alt="Charminar night memory"><div class="caption">Hyderabad nights & memories</div></div>
+</div>
+</section>
+
+<section id="story">
+<div class="section-title"><div class="small">Three months, one story</div><h2>Our Best Best Best Friendship</h2></div>
+<div class="timeline">
+<div class="event"><span class="dot"></span><h3>Chapter 01 — The beginning</h3><p>Two people met, started talking, and had no idea how many memories would follow.</p></div>
+<div class="event"><span class="dot"></span><h3>Chapter 02 — Getting comfortable</h3><p>The conversations became easier, the jokes became more random, and the friendship started feeling natural.</p></div>
+<div class="event"><span class="dot"></span><h3>Chapter 03 — The memories</h3><p>Photos, food, places, silly moments — the little things started becoming our things.</p></div>
+<div class="event"><span class="dot"></span><h3>Chapter 04 — Right now</h3><p>Three months in. Still writing. Still making memories. Still nowhere near the last page.</p></div>
+</div>
+</section>
+
+<section id="future">
+<div class="section-title"><div class="small">To be continued...</div><h2>More Best-Friend Memories Ahead</h2></div>
+<div class="future">
+<div class="box"><strong>Next crazy plan ✦</strong>Waiting for us to create it.</div>
+<div class="box"><strong>One more food memory 🍕</strong>Because apparently one is never enough.</div>
+<div class="box"><strong>Another perfect photo </strong>Somewhere we haven't been yet.</div>
+</div>
+</section>
+
+<section class="final">
+<div class="section-title"><div class="small">The last page... for now</div><h2>Not the end.</h2></div>
+<p>It's just the end of this little website.<br>The real story is still being written. </p>
+</section>
+<footer>Made with memories · Rohith × Veduuuuuuuuuuuu · BEST BEST BEST FRIENDS</footer>
+
+<div class="modal" id="modal"><button class="close" id="close">×</button><img id="modalImg" src="" alt="Expanded memory"></div>
+<script>
+const modal=document.getElementById('modal'), modalImg=document.getElementById('modalImg');
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('click',()=>{modalImg.src=c.dataset.img;modal.classList.add('show')}));
+document.getElementById('close').onclick=()=>modal.classList.remove('show');
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('show')});
+</script>
+</body>
+</html>
